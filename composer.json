@@ -1,0 +1,18 @@
+{
+    "name": "weskiller/support",
+    "description": "support",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "weskiller",
+            "email": "weskiller@vip.qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "Weskiller\\Support": "src"
+    },
+    "require": {
+    }
+}
