@@ -11,7 +11,9 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-        "Weskiller\\Support": "src"
+        "psr-4": {
+            "Weskiller\\Support": "src"
+        }
     },
     "require": {
         "php": "^7.4",
