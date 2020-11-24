@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Concrete\Utils;
+namespace Weskiller\Support\Json;
 
-class Json
+class Translator
 {
     public const ENCODE_FLAG
         = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE

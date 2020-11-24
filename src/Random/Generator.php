@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Concrete\Utils;
+namespace Weskiller\Support\Random;
 
-class Random
+class Generator
 {
     /**
      * 随机包含拉丁数字，大小写字母的字符串.
@@ -15,7 +15,7 @@ class Random
      */
     public static function str(int $length = 8): string
     {
-        return self::generate(
+        return self::create(
             $length,
             'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
         );
@@ -28,7 +28,7 @@ class Random
      * @return string
      * @throws
      */
-    public static function generate(int $length, string $chars): string
+    public static function create(int $length, string $chars): string
     {
         $count = strlen($chars);
         $str = '';
@@ -49,7 +49,7 @@ class Random
      */
     public static function number(int $length = 8): string
     {
-        return self::generate($length, '0123456789');
+        return self::create($length, '0123456789');
     }
 
     /**
@@ -59,7 +59,7 @@ class Random
      */
     public static function chr(int $length = 8): string
     {
-        return self::generate($length,
+        return self::create($length,
             'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
     }
 }
