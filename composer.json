@@ -14,5 +14,8 @@
         "Weskiller\\Support": "src"
     },
     "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "symfony/http-foundation": "^5"
     }
 }
