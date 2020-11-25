@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "Weskiller\\Support\\": "src"
-        }
+        },
+        "files": [
+            "src/helper.php"
+        ]
     },
     "require": {
         "php": "^7.4",
