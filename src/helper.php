@@ -5,7 +5,7 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Support\Enumerable;
 use Weskiller\Support\Json\Translator;
 
-if (!function_exists('force2array')) {
+if (!function_exists('toArray')) {
     /**
      * @param $item
      *
@@ -13,7 +13,7 @@ if (!function_exists('force2array')) {
      * @throws
      *
      */
-    function force2array($item)
+    function toArray($item)
     {
         if (is_array($item)) {
             return $item;
@@ -47,6 +47,6 @@ if (!function_exists('force2array')) {
             return iterator_to_array($item);
         }
 
-        return (array) $item;
+        return $item;
     }
 }
